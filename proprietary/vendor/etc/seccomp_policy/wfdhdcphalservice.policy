@@ -67,3 +67,4 @@ getdents64: 1
 dup: 1
 gettimeofday: 1
 mremap:1
+process_vm_readv: 1

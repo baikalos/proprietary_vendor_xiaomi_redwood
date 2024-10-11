@@ -79,3 +79,4 @@ sendmsg: 1
 recvfrom: 1
 mremap: 1
 gettimeofday: 1
+process_vm_readv: 1
