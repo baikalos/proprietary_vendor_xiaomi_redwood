@@ -14,3 +14,4 @@ service vendor.imsdaemon /vendor/bin/imsdaemon
     user radio
     socket ims_datad stream 0660 system radio
     group radio wifi inet vendor_qti_diag log
+    writepid /dev/cpuset/system-background/tasks

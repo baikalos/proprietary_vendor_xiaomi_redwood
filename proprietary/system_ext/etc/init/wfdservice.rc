@@ -8,6 +8,7 @@ service wfdservice /system_ext/bin/wfdservice
     user system
     disabled
     oneshot
+    writepid /dev/cpuset/foreground/tasks
 
 service wfdservice64 /system_ext/bin/wfdservice64
     class main

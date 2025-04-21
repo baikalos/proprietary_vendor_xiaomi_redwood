@@ -35,3 +35,4 @@ service vendor.sensors /vendor/bin/sscrpcd sensorspd
     group system wakelock
     capabilities BLOCK_SUSPEND
     shutdown critical
+    writepid /dev/cpuset/system-background/tasks

@@ -16,6 +16,7 @@ service dpmd /system/system_ext/bin/dpmd
     socket dpmwrapper stream 660 root inet
     group system readproc inet radio wakelock oem_2901
     disabled
+    writepid /dev/cpuset/system-background/tasks
 
 on property:persist.vendor.dpm.feature=*
     start dpmd

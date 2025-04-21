@@ -35,3 +35,4 @@ service vendor.adsprpcd /vendor/bin/adsprpcd
    class main
    user system
    group media
+   writepid /dev/cpuset/system-background/tasks
