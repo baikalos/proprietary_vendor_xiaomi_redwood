@@ -8,10 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/product/etc/device_features/redwood.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/redwood.xml \
     vendor/xiaomi/redwood/proprietary/product/etc/device_features/redwoodin.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/redwoodin.xml \
-    vendor/xiaomi/redwood/proprietary/system/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml \
-    vendor/xiaomi/redwood/proprietary/system/etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml \
-    vendor/xiaomi/redwood/proprietary/system/etc/permissions/vendor.xiaomi.hardware.misys-V4.0-java-permission.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.xiaomi.hardware.misys-V4.0-java-permission.xml \
-    vendor/xiaomi/redwood/proprietary/system/etc/permissions/vendor.xiaomi.hardware.misys.V3_0-permission.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.xiaomi.hardware.misys.V3_0-permission.xml \
     vendor/xiaomi/redwood/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/redwood/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/redwood/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
@@ -210,10 +206,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc \
-    vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@4.0-service.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/redwood/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -401,11 +393,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/redwood/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
-    libmisys_jni.xiaomi \
-    vendor.xiaomi.hardware.misys@1.0 \
-    vendor.xiaomi.hardware.misys@2.0 \
-    vendor.xiaomi.hardware.misys@3.0 \
-    vendor.xiaomi.hardware.misys@4.0 \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -682,10 +669,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.soter@1.0-impl \
     vendor.xiaomi.hardware.citsensorservice@1.1-impl \
     vendor.xiaomi.hardware.displayfeature@1.0-impl \
-    vendor.xiaomi.hardware.misys@1.0-impl \
-    vendor.xiaomi.hardware.misys@2.0-impl \
-    vendor.xiaomi.hardware.misys@3.0-impl \
-    vendor.xiaomi.hardware.misys@4.0-impl \
     jcos_nq_client \
     lib-imscommon \
     lib-imsdpl \
@@ -758,7 +741,6 @@ PRODUCT_PACKAGES += \
     libcdfw_remote_api \
     libcdsp_default_listener \
     libceres \
-    libcheckpid \
     libchilog \
     libclient2slpi.notifier \
     libcne \
@@ -809,7 +791,6 @@ PRODUCT_PACKAGES += \
     libloc_socket \
     liblocationservice \
     liblocationservice_glue \
-    liblogwrap_vendor \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
@@ -832,12 +813,9 @@ PRODUCT_PACKAGES += \
     libmialgo_video_seg \
     libmialgoengine \
     libmibokeh_855 \
-    libmicuttlefish_fs \
-    libmicuttlefish_utils \
     libminksocket \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
-    libmivsock_utils \
     libmlipay \
     libmlipay@1.1 \
     libmm-color-convertor \
@@ -1054,10 +1032,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.1 \
     vendor.xiaomi.hardware.displayfeature@1.0_vendor \
-    vendor.xiaomi.hardware.misys@1.0_vendor \
-    vendor.xiaomi.hardware.misys@2.0_vendor \
-    vendor.xiaomi.hardware.misys@3.0_vendor \
-    vendor.xiaomi.hardware.misys@4.0_vendor \
     bm2n06 \
     bm2n08 \
     bm2n13 \
@@ -1135,10 +1109,6 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     camerax-vendor-extensions \
     tcmclient \
-    vendor.xiaomi.hardware.misys-V1.0-java \
-    vendor.xiaomi.hardware.misys-V2.0-java \
-    vendor.xiaomi.hardware.misys-V4.0-java \
-    vendor.xiaomi.hardware.misys.V3_0 \
     audiosphere \
     com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
@@ -1151,10 +1121,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss@4.0-service.xml \
     vendor.xiaomi.hardware.citsensorservice@1.1-service.xml \
-    vendor.xiaomi.hardware.misys@1.0.xml \
-    vendor.xiaomi.hardware.misys@2.0.xml \
-    vendor.xiaomi.hardware.misys@3.0.xml \
-    vendor.xiaomi.hardware.misys@4.0.xml \
     adpl \
     adsprpcd \
     batterysecret \
@@ -1183,10 +1149,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.secure_element@1.2-service \
     vendor.xiaomi.hardware.citsensorservice@1.1-service \
     vendor.xiaomi.hardware.displayfeature@1.0-service \
-    vendor.xiaomi.hardware.misys@1.0-service \
-    vendor.xiaomi.hardware.misys@2.0-service \
-    vendor.xiaomi.hardware.misys@3.0-service \
-    vendor.xiaomi.hardware.misys@4.0-service \
     ims_rtp_daemon \
     imsdaemon \
     init.qcom.sensors \
@@ -1235,8 +1197,4 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libq3dtools_adreno_so
 
 PRODUCT_BOOT_JARS += \
-    camerax-vendor-extensions \
-    vendor.xiaomi.hardware.misys-V1.0-java \
-    vendor.xiaomi.hardware.misys-V2.0-java \
-    vendor.xiaomi.hardware.misys-V4.0-java \
-    vendor.xiaomi.hardware.misys.V3_0
+    camerax-vendor-extensions
