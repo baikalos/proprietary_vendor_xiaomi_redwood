@@ -7,6 +7,9 @@ service vendor.displayfeature-hal-1-0 /vendor/bin/hw/vendor.xiaomi.hardware.disp
     user system
     group system graphics
     onrestart restart displayfeature
+    capabilities SYS_NICE
+    task_profiles ServiceCapacityLow
+    seclabel u:r:hal_displayfeature_xiaomi:s0
 
 on early-boot
     # Display feature sysfs node
@@ -26,3 +29,6 @@ service displayfeature /vendor/bin/displayfeature
     class late_start
     user root
     group root
+    capabilities SYS_NICE
+    task_profiles ServiceCapacityLow
+    seclabel u:r:hal_displayfeature_xiaomi:s0
